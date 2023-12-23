@@ -18,7 +18,7 @@ const Login = () => {
         if (res.ok) {
           return res.json();
         } else {
-          throw new Error('');
+          throw new Error('invalid credential');
         }
       })
       .then((data) => {
